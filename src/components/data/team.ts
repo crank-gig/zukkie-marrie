@@ -27,7 +27,7 @@ export const TEAM: TeamMember[] = [
       'Diploma in Nursing, USD College, USA',
     ],
     memberships: ['Nigerian Small Scale Association', 'Director, Lizzy-Martin Foundation Nigeria'],
-    image: "https://res.cloudinary.com/derzcse6f/image/upload/v1784575821/obianuju_azukaego_pta4vk.jpg"
+    image: "https://res.cloudinary.com/derzcse6f/image/upload/v1785589864/Screenshot_2026-08-01_133235_elnlxd.png"
   },
   {
     id: 'operations',
@@ -44,7 +44,7 @@ export const TEAM: TeamMember[] = [
       "With his wealth of experience in engineering, construction, project execution, and operational management, Mr. Ibe plays a key role in ensuring the successful delivery of the company's civil servant housing, construction, and infrastructure development projects.",
     ],
     credentials: ['B.Sc. Mechanical Engineering', 'Diploma in Theology'],
-    image: 'https://res.cloudinary.com/derzcse6f/image/upload/v1784575565/amarshi_martins_slvlel.jpg'
+    image: 'https://res.cloudinary.com/derzcse6f/image/upload/v1785597548/Screenshot_2026-08-01_161822_hezu7n.png'
   },
   {
     id: 'building',
@@ -157,6 +157,6 @@ export const TEAM: TeamMember[] = [
       'Emotional and Social Intelligence — Coursera',
       'Diploma in Leadership Development — Covenant University',
     ],
-    image: 'https://res.cloudinary.com/derzcse6f/image/upload/v1784575442/chinedu_nwachukwu_sg4gil.jpg',
+    image: 'https://res.cloudinary.com/derzcse6f/image/upload/v1785597701/Screenshot_2026-08-01_162109_ykkrp0.png',
   },
 ];

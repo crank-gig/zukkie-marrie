@@ -25,7 +25,7 @@ export function DirectorMessage() {
             </div>
             */}
             <img
-              src="https://res.cloudinary.com/derzcse6f/image/upload/v1784575821/obianuju_azukaego_pta4vk.jpg"
+              src="https://res.cloudinary.com/derzcse6f/image/upload/v1785589864/Screenshot_2026-08-01_133235_elnlxd.png"
               alt="CEO's portrait"
               loading="lazy"
               className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"

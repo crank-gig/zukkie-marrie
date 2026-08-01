@@ -99,30 +99,39 @@ export function Hero() {
             </motion.div>
           </div>
 
-          {/* Key figures */}
-          <motion.dl
-            initial={{ opacity: 0, y: 26 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
-            className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/12 bg-white/10 backdrop-blur-md"
-          >
-            {HERO_STATS.map((stat) => (
-              <div key={stat.label} className="bg-navy-950/40 p-5 sm:p-6">
-                <dt className="sr-only">{stat.label}</dt>
-                <dd>
-                  <span className="block font-display text-2xl font-semibold text-gold-400 sm:text-3xl">
-                    <Counter
-                      value={stat.value}
-                      prefix={stat.prefix}
-                      suffix={stat.suffix}
-                      plain={stat.value > 1900}
-                    />
-                  </span>
-                  <span className="mt-2 block text-xs leading-snug text-navy-100">{stat.label}</span>
-                </dd>
-              </div>
-            ))}
-          </motion.dl>
+          <div>
+            <img
+              src="https://res.cloudinary.com/derzcse6f/image/upload/v1785589575/Screenshot_2026-08-01_131445_ohi3fr.png"
+              alt="Business profile campaign banner"
+              loading="lazy"
+              className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            {/* Key figures 
+            <motion.dl
+              initial={{ opacity: 0, y: 26 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
+              className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/12 bg-white/10 backdrop-blur-md"
+            >
+              {HERO_STATS.map((stat) => (
+                <div key={stat.label} className="bg-navy-950/40 p-5 sm:p-6">
+                  <dt className="sr-only">{stat.label}</dt>
+                  <dd>
+                    <span className="block font-display text-2xl font-semibold text-gold-400 sm:text-3xl">
+                      <Counter
+                        value={stat.value}
+                        prefix={stat.prefix}
+                        suffix={stat.suffix}
+                        plain={stat.value > 1900}
+                      />
+                    </span>
+                    <span className="mt-2 block text-xs leading-snug text-navy-100">{stat.label}</span>
+                  </dd>
+                </div>
+              ))}
+            </motion.dl>
+            */}
+          </div>
         </div>
       </div>
     </section>

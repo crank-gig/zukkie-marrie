@@ -22,7 +22,7 @@ export function Projects() {
         lead="Duly incorporated since 1997, with a delivered portfolio spanning housing estates, civil works, renewable energy and plant."
       />
 
-      <div className="mt-12 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+      <div className="mt-12 grid gap-6 xl:grid-cols-[0.95fr_1.05fr]">
         <Reveal>
           <figure className="h-full overflow-hidden rounded-2xl border border-navy-900/8 bg-white shadow-card">
             <button
@@ -56,13 +56,13 @@ export function Projects() {
           </figure>
         </Reveal>
 
-        <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
           {PROJECT_IMAGES.map((image, index) => (
-            <Reveal as="li" key={image.id} delay={index * 0.05}>
+            <Reveal as="div" key={image.id} delay={index * 0.05}>
               <button
                 type="button"
                 onClick={() => setActiveIndex(index + 1)}
-                className="group relative block h-full w-full overflow-hidden rounded-2xl border border-navy-900/8 bg-white text-left shadow-card transition-all duration-500 ease-brand hover:-translate-y-1 hover:shadow-lift"
+                className="group flex h-full w-full flex-col overflow-hidden rounded-2xl border border-navy-900/8 bg-white text-left shadow-card transition-all duration-500 ease-brand hover:-translate-y-1 hover:shadow-lift"
               >
                 <SmartImage
                   src={image.src}
@@ -70,13 +70,16 @@ export function Projects() {
                   wrapperClassName="aspect-[4/3]"
                   className="transition-transform duration-700 ease-brand group-hover:scale-105"
                 />
-                <span className="absolute inset-x-0 bottom-0 bg-navy-950/78 p-3 text-[0.72rem] font-medium leading-snug text-white opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100">
-                  {image.caption}
-                </span>
+                <div className="flex flex-1 flex-col justify-between bg-white/95 p-4">
+                  <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-gold-700">
+                    Project snapshot
+                  </p>
+                  <p className="mt-2 text-sm font-medium leading-snug text-navy-900">{image.caption}</p>
+                </div>
               </button>
             </Reveal>
           ))}
-        </ul>
+        </div>
       </div>
 
       <Lightbox
